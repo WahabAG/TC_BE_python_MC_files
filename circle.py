@@ -5,3 +5,6 @@ def area(radius):
 
 def shape():
     return "circle"
+
+def testing():
+    return True
