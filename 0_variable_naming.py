@@ -25,7 +25,7 @@ print(a, b, c)
 
 print(a + b + c)
 print(a +" "+ b + " " + c)
-print("My name is "+a +", His name is "+ b +" and Her name is "+ c)
+print("My name is "+ a +", His name is "+ b +" and Her name is "+ c)
 
 print(f"My name is {a}, His Name is {b}, and Her name is {c}")
 
