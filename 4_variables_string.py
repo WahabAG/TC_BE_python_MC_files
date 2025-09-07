@@ -1,9 +1,9 @@
 x = 'Hello, world!'       # string
 y = "Hello there"     # string
-z = """Lorem ipsum dolor sit amet,
+z = """Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua."""
+ut labore et dolore magna aliqua.""" # note once a literal is assingend to a vriable the content works like a normal variable
 a = '''
 We are testing
 '''

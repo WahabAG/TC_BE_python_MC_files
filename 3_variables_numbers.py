@@ -1,6 +1,6 @@
-x = -10        # int
-y = -3.14     # float
-z = 1 + 2j   # complex
+x = -10        # int whole numbers
+y = -3.14     # float or decimals
+z = 1 + 2j   # complex special numbers mostly for formulars
 
 
 print(x)

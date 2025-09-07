@@ -43,15 +43,15 @@ f = a + " " + b
 # info = f"My name is {name}"
 # print(info)
 
-# cells = f"There are {4 * 5} cells"
-# print(cells)
+cells = f"There are {4 * 5} cells"
+print(cells)
 
 # #escaping characters
 # escaped = 'You are a \"beginner\" in web development'
 # print(escaped)
 
-weFormat = '''We are trying our best \n\tHowever, we need to practice\n\rOkay, Good'''
-print(weFormat)
+# weFormat = '''We are trying our best \n\tHowever, we need to practice\n\rOkay, Good'''
+# print(weFormat)
 # # \n 	New Line 	
 # # \r 	Carriage Return 	
 # # \t 	Tab
