@@ -43,8 +43,8 @@ f = a + " " + b
 # info = f"My name is {name}"
 # print(info)
 
-cells = f"There are {4 * 5} cells"
-print(cells)
+# cells = f"There are {4 * 5} cells"
+# print(cells)
 
 # #escaping characters
 # escaped = 'You are a \"beginner\" in web development'
