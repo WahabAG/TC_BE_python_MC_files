@@ -35,11 +35,11 @@ if age == 25 or age == 50:
 print("\n================================")
 gender = str(input("Enter your gender: "))
 
-if age == 25:
+if age >= 25:
     if gender == "male":
         print("You should be a dad by now")
         if x == 4:
-            print("You should have four kids by now")
+            print(f"You should have {x} kids by now")
     elif gender == "female":
         print("You should be a mom by now")
 else:
