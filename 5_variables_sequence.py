@@ -6,7 +6,7 @@ choice = [ True, False]
 # coordinates = (3, 4)                 # tuple
 # print(coordinates)
 
-for i in range(6):                   # range
+for i in range(1, 10, 2):                  # range
     print(i)
 
 
