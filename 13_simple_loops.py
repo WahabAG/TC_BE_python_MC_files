@@ -1,24 +1,26 @@
 # for Loops
-for i in range(5):
-    print(i)
+# for i in range(5):
+#     print(i)
 
-listOfThings = ["apple", "mango", "cheese", "orange"]
-for food in listOfThings:
-    print(food)
+# listOfThings = ["apple", "mango", "cheese", "orange"]
+# for food in listOfThings:
+#     print(food)
 
-listOfNumbers = [3, 1, 2, 90, 343]
-for num in listOfNumbers:
-    print(num)
+# listOfNumbers = [3, 1, 2, 90, 343]
+# for num in listOfNumbers:
+#     # print(num)
 
 
 # while Loops 
 count = 0
-while count < 5:
+while count < 10:
     print(count) # action before update
     count += 1 # never forget your increment else it will run forever
     # print(count) # action after update
-    if(count == 3):
-        continue
+    if(count > 4):
+        print(f"this number {count} \" will be rounded \" to 1 in a decimal ")
+    elif count <= 4 :
+        print(f"this number {count} \" will be rounded \" to 0 in a decimal ")
         # break
     # actions to do here after skip
 
