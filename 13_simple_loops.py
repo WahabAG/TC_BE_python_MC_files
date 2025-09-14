@@ -21,12 +21,13 @@ while count < 10:
         print(f"this number {count} \" will be rounded \" to 1 in a decimal ")
     elif count <= 4 :
         print(f"this number {count} \" will be rounded \" to 0 in a decimal ")
+        continue
         # break
     # actions to do here after skip
 
     
 # break - end the loop
-# continue - skip over a part of the loop
+# continue - skip over a part of the loops
 
 
 # INSTRUCTIONS FOR TESTING

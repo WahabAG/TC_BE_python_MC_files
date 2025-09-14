@@ -1,14 +1,14 @@
 ########################################
-# def greetBasic():
-#     return "Hello!"
+def greetBasic():
+    return "Hello!"
 
-# greet = greetBasic() # I have called my function
+greet = greetBasic() # I have called my function
 
 # print (greet)
 # def greet(name, age):
 #     return f"Hello, {name} ({age})!"
 
-# greetings = greet("John", 36)
+# greetings = greet("Azeez", 28)
 
 # print (greetings)
 
@@ -18,7 +18,7 @@
 #     print(f"Hello, {name}!")
 
 
-# greetWithArgs("James")
+# greetWithArgs("Hybrid D. Void")
 
 
 # def add(a, b):
@@ -37,12 +37,12 @@
 
 # Variable-length Arguments: You can pass an arbitrary number of arguments using *args and **kwargs.
 # *args: Collects extra positional arguments into a tuple.
-# def sum_numbers(*args):
-#     print(args[0])
-#     return sum(args)
+def sum_numbers(*args):
+    print(args[0])
+    return sum(args)
 
-# print(sum_numbers(1, 2, 3))  # Output: 6
-# print(sum_numbers(4, 5, 6, 7))  # Output: 22
+print(sum_numbers(1, 2, 3))  # Output: 6
+print(sum_numbers(4, 5, 6, 7))  # Output: 22
 
 
 
@@ -51,7 +51,7 @@ def greet(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
-greet(name="Alice", age=30)
+# greet(name="Alice", age=30)
 # Output:
 # name: Alice
 # age: 30
