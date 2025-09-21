@@ -14,13 +14,13 @@
 # while Loops 
 count = 0
 while count < 10:
-    print(count) # action before update
+    # print(count) # action before update
     count += 1 # never forget your increment else it will run forever
-    # print(count) # action after update
+    print(count) # action after update (This will print a count higher that the actual iteration number of the loop)
     if(count > 4):
-        print(f"this number {count} \" will be rounded \" to 1 in a decimal ")
+        print(f"this number \" {count} \" is greater than 4 ")
     elif count <= 4 :
-        print(f"this number {count} \" will be rounded \" to 0 in a decimal ")
+        print(f"this number \" {count} \" is less or equals 4 ")
         continue
         # break
     # actions to do here after skip
