@@ -33,7 +33,7 @@ a = "Hello"
 b = "There"
 c = a + b
 
-# print(c)
+print(c)
 
 f = a + " " + b
 # print(f)
