@@ -1,4 +1,5 @@
-# import random
+import random
+
 
 def greeting(player):
     print(f"H3ll0 {player} Welcome to the G4M3")

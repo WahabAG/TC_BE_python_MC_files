@@ -1,8 +1,9 @@
-x = "Hello, world!"        # string
+# x = "Hello, world!"        # string
+#    0123456789
 
 # print(x[0])
 
-# print(x[:5])
+# print(x[:5]) #range character 5  is not included
 
 # print(x[2:5]) # slicing a string
 
@@ -12,11 +13,14 @@ x = "Hello, world!"        # string
 
 # print(x[-5:-2])
 
-# y = "Hello there"        # string
+y = "Hello there"        # string
 
 # print(y.upper()) #uppercase
 # print(y.lower()) #lowercase
 # print(y.capitalize()) #first character uppercase
+# print(y.startswith("H")) # checks the character the srings begin with and gives boolean True
+# print(y.endswith("e")) # checks the character the srings ends with and gives boolean True
+
 
 # z = " Hello there "
 # print(z.strip()) # removes leading and trailing whitespaces
@@ -29,13 +33,13 @@ x = "Hello, world!"        # string
 
 # ################################
 # Concatenation
-a = "Hello"
-b = "There"
-c = a + b
+# a = "Hello"
+# b = "There"
+# c = a + b
 
-print(c)
+# print(c)
 
-f = a + " " + b
+# f = a + " " + b
 # print(f)
 
 # #formatting
