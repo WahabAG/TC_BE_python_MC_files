@@ -6,15 +6,15 @@ def greeting(player):
 
 def get_choice():
     player_choice = input("Enter Your Choice(rock, paper, scissors)")
-    game_list =["rock" , "paper" , "scissors"]
-    computer_choice = random.choice(game_list)
+    game_option =["rock" , "paper" , "scissors"]
+    computer_choice = random.choice(game_option)
     choices = {"player" : player_choice , "computer": computer_choice}
     return choices
 
 def check_win(player, computer):
     print(f"Your choice {player}, while Computer choice {computer}")
     if player == computer:
-        return "its a tie!!"
+        print("its a tie!!")
     
 
 
@@ -22,7 +22,7 @@ def check_win(player, computer):
 
 
 
-greeting(input("What is Your G4M3R T4G "))
+# greeting(input("What is Your G4M3R T4G "))
 check_win("rock", "rock")
 # # to run this code copy and paste to your terminal =>> python free_code_camp.py
 
