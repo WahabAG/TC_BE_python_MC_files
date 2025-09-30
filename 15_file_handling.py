@@ -4,10 +4,10 @@
 # Always close files to free resources.
 
 
-file = open("example.txt", "r")  # Open in read mode
-content = file.read()
-print(content)
-file.close()
+# file = open("example.txt", "r")  # Open in read mode
+# content = file.read()
+# print(content)
+# file.close()
 
 
 # File Modes
@@ -22,10 +22,10 @@ file.close()
 
 # Reading Files
 # Methods: read(), readline(), readlines().
-with open("example.txt", "r") as file:
-    print(file.read())        # Read entire file
-    print(file.readline())    # Read one line
-    print(file.readlines())   # Read all lines as a list
+# with open("example.txt", "r") as file:
+    # print(file.read())        # Read entire file
+    # print(file.readline())    # Read one line
+    # print(file.readlines())   # Read all lines as a list
     
 # Writing Files
 # Use write() or writelines() for writing.
@@ -35,14 +35,14 @@ with open("example.txt", "w") as file:
     
     
 # Appending Files
-with open("example.txt", "a") as file:
-    file.write("This is an appended line.\n")
+# with open("example.txt", "a") as file:
+#     file.write("This is an appended line.\n")
 
 
 # To delete a file
-import os
-if os.path.exists("example.txt"):
-    os.remove("example.txt")
+# import os
+# if os.path.exists("example.txt"):
+#     os.remove("example.txt")
 
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code
