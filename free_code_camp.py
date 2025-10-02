@@ -66,9 +66,9 @@
 # Tc_Mc Task 2 
 # Q7
 a = input("Enter first Number: ")
-a = float(a.strip())
+a = int(a.strip())
 b = input("Enter second number: ")
-b = float(b.strip())
+b = int(b.strip())
 
 def addition():
     print(a + b)
