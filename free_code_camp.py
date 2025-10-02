@@ -1,20 +1,20 @@
-import random
+# import random
 
 
-def greeting(player):
-    print(f"H3ll0 {player} Welcome to the G4M3")
+# def greeting(player):
+#     print(f"H3ll0 {player} Welcome to the G4M3")
 
-def get_choice():
-    player_choice = input("Enter Your Choice(rock, paper, scissors)")
-    game_option =["rock" , "paper" , "scissors"]
-    computer_choice = random.choice(game_option)
-    choices = {"player" : player_choice , "computer": computer_choice}
-    return choices
+# def get_choice():
+#     player_choice = input("Enter Your Choice(rock, paper, scissors)")
+#     game_option =["rock" , "paper" , "scissors"]
+#     computer_choice = random.choice(game_option)
+#     choices = {"player" : player_choice , "computer": computer_choice}
+#     return choices
 
-def check_win(player, computer):
-    print(f"Your choice {player}, while Computer choice {computer}")
-    if player == computer:
-        print("its a tie!!")
+# def check_win(player, computer):
+#     print(f"Your choice {player}, while Computer choice {computer}")
+#     if player == computer:
+#         print("its a tie!!")
     
 
 
@@ -23,7 +23,7 @@ def check_win(player, computer):
 
 
 # greeting(input("What is Your G4M3R T4G "))
-check_win("rock", "rock")
+# check_win("rock", "rock")
 # # to run this code copy and paste to your terminal =>> python free_code_camp.py
 
 # tc_mc_task 1
@@ -62,3 +62,58 @@ check_win("rock", "rock")
 
 # score = True
 # print(type(score))
+
+# Tc_Mc Task 2 
+# Q7
+a = input("Enter first Number: ")
+a = float(a.strip())
+b = input("Enter second number: ")
+b = float(b.strip())
+
+def addition():
+    print(a + b)
+def subtraction():
+    print(a - b)
+def multiply():
+    print(a * b)
+def divide():
+    print(a / b)
+
+addition()
+subtraction()
+multiply()
+divide()
+
+# Q8
+user_score = input("Enter student score: ")
+user_score = int(user_score.strip())
+
+if user_score > 100 or user_score < 0:
+    print(f"Enter Valid Score: {user_score} is Invalid")
+
+if user_score >= 90 and user_score <=100:
+    print("A")
+elif user_score < 90 and user_score >= 80:
+    print("B")
+elif user_score < 80 and user_score >= 70:
+    print("C")
+elif user_score < 70 and user_score >= 60:
+    print("D")
+else:
+    print ("F")
+# Q9
+sentence = input("Enter your sentence")
+sentence = sentence.strip()
+
+vowels = "aeiou"
+for vowel in vowels:
+    print(f"{vowel} : {sentence.count(vowel)}")
+if len(sentence) > 20:
+    print(f"True the sentence is {len(sentence)} and is longer than 20")
+else:
+    print("False")
+
+print(sentence.title())
+
+
+
