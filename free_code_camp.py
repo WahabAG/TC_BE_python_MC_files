@@ -1,8 +1,8 @@
 import random
 
 
-# def greeting(player):
-#     print(f"H3ll0 {player} Welcome to the G4M3")
+def greeting(player):
+    print(f"H3ll0 {player} Welcome to the G4M3")
 
 def get_choice():
     player_choice = input("Enter Your Choice(rock, paper, scissors)")
@@ -15,33 +15,34 @@ def get_choice():
 def check_win(player, computer):
     print(f"Your chose {player}, while Computer choose {computer}")
     if player == computer:
-        print("its a tie!!")
+        return "its a tie!!"
     elif player == "rock":  # writing comparisons of player palying rock
         if computer == "paper":
-            print("Paper covers rock Computer WINS :(")
+            return "Paper covers rock Computer WINS :("
         elif  computer == "scissors":
-            print("Rock breaks scissors Player WINS!!")
+            return "Rock breaks scissors Player WINS!!"
     elif player == "paper":  # writing comparisons of player palying paper
         if computer == "rock":
-            print("Paper covers rock Player WINS!!")
+            return "Paper covers rock Player WINS!!"
         elif computer == "scissors":
-            print("Scissors cuts Paper Computer WINS:(")
+            return "Scissors cuts Paper Computer WINS:("
     elif player == "scissors":   # writing comparisons of player palying scissors
         if computer == "rock":
-            print("Rock breaks scissors Computer WINS:(")
+            return "Rock breaks scissors Computer WINS:("
         elif computer == "paper": 
-            print("Scissors cuts Paper Player WINS!!")
+            return "Scissors cuts Paper Player WINS!!"
     else : print("Go again")
 
+greeting(input("What is Your G4M3R T4G "))
+choices = get_choice()
+result = check_win(choices["player"], choices["computer"])
+
+print(result)
 
 
 
 
 
-
-
-# greeting(input("What is Your G4M3R T4G "))
-check_win("rock", "scissors")
 # # to run this code copy and paste to your terminal =>> python free_code_camp.py
 
 # tc_mc_task 1
