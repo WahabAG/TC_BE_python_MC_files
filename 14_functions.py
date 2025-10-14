@@ -1,5 +1,6 @@
 ########################################
 # def greetBasic():
+#     pass  # this key word tells the computer to move to the next item even if no value is returned
 #     return "Hello!"
 
 # greet = greetBasic() # I have called my function

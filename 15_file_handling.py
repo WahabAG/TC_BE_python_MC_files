@@ -29,9 +29,9 @@
     
 # Writing Files
 # Use write() or writelines() for writing.
-with open("example.txt", "w") as file:
-    file.write("Hello, World!\n")
-    file.writelines(["Line 1\n", "Line 2\n"])
+# with open("example.txt", "w") as file:
+#     file.write("Hello, World!\n")
+#     file.writelines(["Line 1\n", "Line 2\n"])
     
     
 # Appending Files
