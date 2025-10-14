@@ -4,6 +4,7 @@ Instead of allowing your program to crash, you can catch the error, display a he
 or take corrective action.
 Using try, except, else, and finally
 """
+import logging
 
 # try: Code that might raise an error is placed inside the try block.
 # except: If an error occurs in the try block, it is caught by the except block.
@@ -34,18 +35,27 @@ Using try, except, else, and finally
 # except ValueError as e:
 #     print(f"Error: {e}")
 
+# loging while handling errors
+logging.basicConfig(
+    filename="app.log",              # Log file name
+    level=logging.DEBUG,             # Log all levels DEBUG and above
+    format="%(asctime)s - %(levelname)s - %(message)s" # Format for logging
+)
+
 
 # Handling Multiple Exceptions
-# try:
-#     # Code that might raise different exceptions
-#     x = int(input("Enter a number: "))
-#     y = 10 / x
-# except ZeroDivisionError:
-#     print("Cannot divide by zero.")
-# except ValueError:
-#     print("Invalid input! Please enter a valid number.")
-# except Exception as e:
-#     print(f"An unexpected error occurred: {e}")
+try:
+    # Code that might raise different exceptions
+    x = int(input("Enter a number: "))
+    y = 10 / x
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+except ValueError:
+    logging.error(ValueError)
+    print("Invalid input! Please enter a valid number.")
+except Exception as e:
+    logging.debug(e)
+    print(f"An unexpected error has occurred Please contact Admin")
 
 
 # Catching Multiple Exceptions in One except Block:
@@ -70,18 +80,18 @@ Using try, except, else, and finally
 
 # Raising Custom Exceptions:
 # You can also define and raise your own custom exceptions by subclassing the built-in Exception class.
-class CustomError(Exception):
-    pass
+# class CustomError(Exception):
+#     pass
 
-def check_age(age):
-    if age < 0:
-        raise CustomError("Age cannot be negative.")
-    print(f"Age: {age}")
+# def check_age(age):
+#     if age < 0:
+#         raise CustomError("Age cannot be negative.")
+#     print(f"Age: {age}")
 
-try:
-    check_age(-5)
-except CustomError as e:
-    print(f"Custom error occurred: {e}")
+# try:
+#     check_age(-5)
+# except CustomError as e:
+#     print(f"Custom error occurred: {e}")
 
 
 # Common Python Exception Types

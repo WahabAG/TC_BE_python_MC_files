@@ -1,3 +1,5 @@
 2025-10-14 08:29:40,744 - INFO - Program started
 2025-10-14 08:29:40,756 - WARNING - This is a warning
 2025-10-14 08:29:40,757 - ERROR - An error occurred
+2025-10-14 08:52:32,994 - DEBUG - invalid literal for int() with base 10: 'big'
+2025-10-14 08:54:32,839 - ERROR - <class 'ValueError'>
