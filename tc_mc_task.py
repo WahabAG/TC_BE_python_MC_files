@@ -88,6 +88,45 @@
 # print(sentence.title())
 
 
+# tc_mc_task 3
+
+# import math
+
+# sqrt = math.sqrt(49)
+# print(f"the squareroot of 49 is {sqrt}")
+
+# sine = math.sin(90)
+# print(f"the sine of 90 is {sine}")
+
+
+# num = input("Enter your number: ")
+
+# num = float(num)
+# # Using if statement
+# if num:
+#     if num == 90:
+#         output = math.sin(num)
+#         print(f" The sine of {num} is {output}")
+#     else:
+#         output = math.sqrt(num)
+#         print(f" The squareroot of {num} is {output}")
+# else : print("Enter a Valid Number")
+
+import circle
+
+addition = circle.add(5,3)
+print(addition)
+
+subtraction = circle.sub(10, 45)
+print(subtraction)
+
+multiplication = circle.mult(5,5)
+print(multiplication)
+
+division = circle.div(5, 2)
+print(division)
+
+
 
 
 # # to run this code copy and paste to your terminal =>> python tc_mc_task.py
