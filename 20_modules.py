@@ -21,7 +21,7 @@ Modules allow you to organize your code into logical sections, making it reusabl
 
 # To use a module, you can import it:
 
-import math
+# import math
 
 # print(math.sqrt(16))  # Using the math module to find the square root
 
@@ -99,12 +99,12 @@ my_package/
 #     return math.pi * radius ** 2
 
 # Let us create a script that imports and uses circle.py 
-import circle
+# import circle
 
-radius = 5
-area = circle.area(radius)
-shape = circle.shape()
-print(f"The area of the {shape} with radius {radius} is {area}")
+# radius = 5
+# area = circle.area(radius)
+# shape = circle.shape()
+# print(f"The area of the {shape} with radius {radius} is {area}")
 
 
 # INSTRUCTIONS FOR TESTING

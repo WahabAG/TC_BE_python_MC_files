@@ -112,21 +112,22 @@
 #         print(f" The squareroot of {num} is {output}")
 # else : print("Enter a Valid Number")
 
-import circle
+# import circle
 
-addition = circle.add(5,3)
-print(addition)
+# addition = circle.add(5,3)
+# print(addition)
 
-subtraction = circle.sub(10, 45)
-print(subtraction)
+# subtraction = circle.sub(10, 45)
+# print(subtraction)
 
-multiplication = circle.mult(5,5)
-print(multiplication)
+# multiplication = circle.mult(5,5)
+# print(multiplication)
 
-division = circle.div(5, 2)
-print(division)
+# division = circle.div(5, 2)
+# print(division)
+
+# task 3
 
 
 
-
-# # to run this code copy and paste to your terminal =>> python tc_mc_task.py
+# # to run this code copy and paste to your terminal =>> python tc_mc_task.py-

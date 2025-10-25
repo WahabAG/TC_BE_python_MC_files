@@ -29,33 +29,33 @@ import logging
 #         raise ValueError("Age cannot be negative")
 #     return age
 
-
 # try:
 #     check_age(-5)
 # except ValueError as e:
 #     print(f"Error: {e}")
 
 # loging while handling errors
-logging.basicConfig(
-    filename="app.log",              # Log file name
-    level=logging.DEBUG,             # Log all levels DEBUG and above
-    format="%(asctime)s - %(levelname)s - %(message)s" # Format for logging
-)
+# logging.basicConfig(
+#     filename="app.log",              # Log file name
+#     level=logging.DEBUG,             # Log all levels DEBUG and above
+#     format="%(asctime)s - %(levelname)s - %(message)s" # Format for logging
+# )
 
 
 # Handling Multiple Exceptions
-try:
-    # Code that might raise different exceptions
-    x = int(input("Enter a number: "))
-    y = 10 / x
-except ZeroDivisionError:
-    print("Cannot divide by zero.")
-except ValueError:
-    logging.error(ValueError)
-    print("Invalid input! Please enter a valid number.")
-except Exception as e:
-    logging.debug(e)
-    print(f"An unexpected error has occurred Please contact Admin")
+# try:
+#     # Code that might raise different exceptions
+#     x = int(input("Enter a number: "))
+#     y = 10 / x
+#     print(y)
+# except ZeroDivisionError:
+#     print("Cannot divide by zero.")
+# except ValueError:
+#     logging.error(ValueError)
+#     print("Invalid input! Please enter a valid number.")
+# except Exception as e:
+#     logging.debug(e)
+#     print(f"An unexpected error has occurred Please contact Admin")
 
 
 # Catching Multiple Exceptions in One except Block:
@@ -80,18 +80,18 @@ except Exception as e:
 
 # Raising Custom Exceptions:
 # You can also define and raise your own custom exceptions by subclassing the built-in Exception class.
-# class CustomError(Exception):
-#     pass
+class CustomError(Exception):
+    pass
 
-# def check_age(age):
-#     if age < 0:
-#         raise CustomError("Age cannot be negative.")
-#     print(f"Age: {age}")
+def check_age(age):
+    if age < 0:
+        raise CustomError("Age cannot be negative.")
+    print(f"Age: {age}")
 
-# try:
-#     check_age(-5)
-# except CustomError as e:
-#     print(f"Custom error occurred: {e}")
+try:
+    check_age(-5)
+except CustomError as e:
+    print(f"Custom error occurred: {e}")
 
 
 # Common Python Exception Types
