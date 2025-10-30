@@ -14,6 +14,12 @@ floor_division_result = x // y # Floor division
 
 print(sum_result,subtraction_result, product_result, power_result, division_result, remainder_result, floor_division_result)
 
+
+# trenary operator
+def randomCalc(age):
+    return True if age > 18 else False
+
+print= randomCalc(age)
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code
 # 2. Run the code -> python 8_arithmetic_operators.py

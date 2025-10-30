@@ -32,6 +32,9 @@ print (x >= y) # True
 
 print (a >= b) # True
 
+# the bitwys operator
+
+
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code
 # 2. Run the code -> python 9_comparison_operators.py

@@ -22,6 +22,7 @@ y = "Hello there"        # string
 # print(y.endswith("e")) # checks the character the srings ends with and gives boolean True
 
 
+
 # z = " Hello there "
 # print(z.strip()) # removes leading and trailing whitespaces
 
