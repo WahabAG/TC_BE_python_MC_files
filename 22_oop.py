@@ -74,8 +74,12 @@ class Person:
         self.name = name
         self.age = age
 
+    def race(self):
+        race = "caucassian"
+        return race
+
 class Employee(Person):
-    def __init__(self, name, age, post, salary):
+    def __init__(self, name, age,  post, salary):
         super().__init__(name, age)
         self.post = post
         self.salary = salary
@@ -88,11 +92,15 @@ class Employee(Person):
         tax = self.salary * (9.5/100)
         return tax
 
+    def race(self):         # polymorphisim of the race parent class
+        race = "black"
+        print(f"i am of african race which means i am {race}")
+
 worker = Employee("Azeez", 28, "Backend Dev",50000)
 Tax = worker.tax_payble()
 worker.show_details()
 print(f"My monthly income tax is: {Tax}")
 
-
+worker.race()  #polymorphysim calling
 
 # run this code by runing in thyour terminal ==> python 22_oop.py
