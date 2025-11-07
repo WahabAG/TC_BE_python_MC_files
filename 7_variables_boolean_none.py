@@ -12,8 +12,10 @@ print(goodToGo)
 # list, tuple and dict are false when empty
 
 # # Global functions
-any() # cecks if any onethe iterable obect is true  returs true
-all() # Checks if all of the interable objects it contains are true before returningb the True Bool
+# any() # cecks if any onethe iterable obect is true  returs true
+# all() # Checks if all of the interable objects it contains are true before returningb the True Bool
+
+
 print(x)
 
 x = None
