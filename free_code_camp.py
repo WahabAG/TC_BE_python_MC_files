@@ -42,6 +42,4 @@
 
 
 
-
-
 # # to run this code copy and paste to your terminal =>> python free_code_camp.py
