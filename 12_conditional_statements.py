@@ -60,6 +60,9 @@ match fav_color:
     case "yellow":
         print("You like a coolor that says \"i'm here please look at me\"")
         pass
+
+
+
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code
 # 2. Run the code -> python 12_conditional_statements.py

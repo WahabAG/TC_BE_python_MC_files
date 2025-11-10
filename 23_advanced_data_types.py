@@ -60,10 +60,44 @@ note when sorting all elements in the list must be of the same type
 # A tuple is an immutable (unmodifiable) collection of elements
 # it can be accessed and used the same way a list can be accessed but it cannot be modified
 my_tuple = (1, 2, 3, 4, "Apple", True)
+my_tuple2 = ("big", "bold", "And" "Beautiful")
+my_tuple3 = (10, 8 , 9, 26, 5, 4, 3, 1, 2, 6, 7, 100, 50)
+
+# my_tuple3.sort()
+# print(sorted(my_tuple3))
 
 
 # # set
 # a set stores multiple items in a single variable, it is unordered and un indexed
 # set items cannot be modified ( changed) but it allows removal and addition
 my_set ={ 1, 2, 3, 4}
-# to run the codes on this page coppy to your terminal ==> python 23_advanced_data_types.py
+
+
+# # Dictionaries
+# dict are a very importany python data type
+# it sttores items in key valu pairs
+my_dict = {"name" : "Black", "race" : "dog", "age" : 5}
+# some dictionary method
+# my_dict.get("name")     # gets the value of the name key
+# my_dict.pop("name")     # removes and the returns the "name" key and valu "Black"
+# my_dict.popitem()       # removes and returns the last key value oair added to the dict
+# my_dict.keys()          # returns all the keys in the dictionary
+# my_dict.values()        # retuns all the values in the dictionary
+# my_dict.items()         # returns all the items (keys and values) in the dictionary
+# del["age"]              # deleting a key value pair
+
+my_dict["no_legs"] = 4    # adding a key value pair to the dictionary
+
+print(my_dict)
+
+
+
+
+
+
+
+
+
+
+
+# # to run the codes on this page coppy to your terminal ==> python 23_advanced_data_types.py 
