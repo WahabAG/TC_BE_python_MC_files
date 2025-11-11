@@ -68,10 +68,22 @@ my_tuple3 = (10, 8 , 9, 26, 5, 4, 3, 1, 2, 6, 7, 100, 50)
 
 
 # # set
-# a set stores multiple items in a single variable, it is unordered and un indexed
-# set items cannot be modified ( changed) but it allows removal and addition
-my_set ={ 1, 2, 3, 4}
+# a set stores multiple items in a single variable, it is unordered and unindexed 
+# sets are   mutable so they can be modified
+# sets can be used like the matemathecal sets
+# note set cannot contain 2 appearance of the same item (no item repitition)
+set1 = {1, 2, 3, 4, 5, 6}
+set2 = {5, 2}
 
+# common = set1 & set2        # getting the intersect wilth & (ampersand)symbol
+# combine = set1 | set2       # using the | (pipe) symbol to form a union the returned values are sorted
+
+
+# print(set1 > set2)      # is set1 a super set of set2
+# print(set1 < set2)      # is set1 a subset of set2
+# print(set2 - set1)      #remove the intercept and returns value left in set2
+# print(common)
+# print(combine)
 
 # # Dictionaries
 # dict are a very importany python data type
@@ -85,10 +97,10 @@ my_dict = {"name" : "Black", "race" : "dog", "age" : 5}
 # my_dict.values()        # retuns all the values in the dictionary
 # my_dict.items()         # returns all the items (keys and values) in the dictionary
 # del["age"]              # deleting a key value pair
+# my_dict.copy()           #copies the existing dictionary to another assigned variable
+# my_dict["no_legs"] = 4    # adding a key value pair to the dictionary
 
-my_dict["no_legs"] = 4    # adding a key value pair to the dictionary
-
-print(my_dict)
+# print(my_dict)
 
 
 
