@@ -103,12 +103,29 @@ my_dict = {"name" : "Black", "race" : "dog", "age" : 5}
 # print(my_dict)
 
 
+# # Comprehension
+#  List c0mprehension -- a coinsice way to create List
+#  Syntax [expression for iten in itterable if conditions]
+# uses sqaure braces
 
+# creating a list of squares
+squares = [x**2 for x in range(10)]
+print(squares)
 
+# filtering even numbers
+even_square= [x**2 for x in range(10) if x % 2 == 0]
+print(even_square)
 
+#  Dictionary comprehension -- a coinsice way to create Dictionary
+#  Syntax {key : value for iten in itterable if conditions}
+# uses curly braces
 
+square_dict = {x: x**2 for x in range(10)}
+print(square_dict)
 
-
+# filtering
+evenSquare_dict = {x: x**2 for x in range(10) if x % 2 == 0}
+print(evenSquare_dict)
 
 
 
