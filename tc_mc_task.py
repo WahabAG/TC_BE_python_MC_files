@@ -126,8 +126,26 @@
 # division = circle.div(5, 2)
 # print(division)
 
-# task 3
+# task 
+import logging
+
+logging.basicConfig(
+    filename="app.log",              
+    level=logging.DEBUG,           
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+def greet(name, lang):
+    logging.info("The Programme Started")
+    print(f"Hello {name}, Welcome to {lang} Programming")
+
+greet("Azeez", "Python")
 
 
 
-# # to run this code copy and paste to your terminal =>> python tc_mc_task.py-
+
+
+
+
+
+# # to run this code copy and paste to your terminal =>> python tc_mc_task.py
