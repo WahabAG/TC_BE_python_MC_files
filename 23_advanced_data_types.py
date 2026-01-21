@@ -127,6 +127,9 @@ print(square_dict)
 evenSquare_dict = {x: x**2 for x in range(10) if x % 2 == 0}
 print(evenSquare_dict)
 
+filter_dict = {key: value for key, value in square_dict.items() if key > 5}
+print(filter_dict)
+
 
 
 # # to run the codes on this page coppy to your terminal ==> python 23_advanced_data_types.py 

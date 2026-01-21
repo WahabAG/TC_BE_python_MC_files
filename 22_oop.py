@@ -141,9 +141,10 @@
 
 
 class Employee:
+    specie = "Human"        # class attribute
     def __init__(self, name, sex, salary):
-        self.name = name
-        self.sex = sex
+        self.name = name        # instance attribute
+        self.sex = sex          # instance attribute
         self._salary = salary
 
     def get_salary(self):
@@ -164,11 +165,13 @@ class Employee:
 
 staff = Employee("Azeez", "male", 200000)
 
+print(Employee.specie)
+
 staff.taxation()
 print(staff.get_salary())
 staff.set_salary(500000)
 
 staff.taxation()
 print(staff.get_salary())
-# run this code by runing in thyour terminal ==> python 22_oop.py
+# run this code by runinghtis in your terminal ==> python 22_oop.py
 
