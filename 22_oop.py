@@ -18,37 +18,54 @@
 # specificChild_obj = specificChild()
 # specificChild_obj.greet()
 
-# """Using the super() key word"""
+# """Using the super() key word to acces instance attributes"""
 # # example
 
-# class Animal:
-#     def __init__(self, name):
-#         self.name = name
+class Animal:
+    def __init__(self, name, color):
+        self.name = name        #instance attribute
+        self.color = color
 
-#     def sound(self):
-#         print("Animals Makes sounds")
+    def sound(self):
+        print("Animals Makes sounds")
+
+    def show_color(self):
+        print(f" my pets name is {self.name}, it is {self.color}")
 
 
-# class Dog(Animal):
+class Dog(Animal):
 
-#     def __init__(self, name, breed):
-#         super().__init__(name) # accessing the parent class
-#         self.breed = breed  # adding new method to child class
-#         self.color = "white black stripes"
+    def __init__(self, name, color, breed):
+        super().__init__(name, color) # accessing the parent class
+        self.breed = breed  # adding new method to child class
+#        self.color = "white black stripes"
 
-#     def sound(self):
-#         print(f"{self.name} barks!!")
+    def sound(self):
+        print(f"{self.name} barks!!")
 
-#     def height(self):
-#         return "3 meters"
+    def height(self):
+        return "3 meters"
     
-#     def color(self, color):
-#         self.color = color
-#         print(f"{self.name} barks!!")
+class Cat(Animal):
+    def __init__(self, name, color, breed):
+        super().__init__(name, color)   # accessing the parent class
+        self.breed = breed
+#        self.color = "tiger patterns"
 
-# dog = Dog("Trex", "Husky")
-# dog.sound()
-# print(dog.height())
+    def height(self):
+        return "2 meters"
+
+# calling classes
+dog = Dog("Trex", "white black stripes", "Husky")
+dog.sound()
+print(dog.height())
+dog.show_color()
+
+
+cat = Cat("Lucky", "tiger patterns", "Fraulien")
+cat.sound()
+print(cat.height())
+cat.show_color()
 
 # inheritance class task
 # class Vehicle:
@@ -140,38 +157,48 @@
 # print(add_result)
 
 
-class Employee:
-    specie = "Human"        # class attribute
-    def __init__(self, name, sex, salary):
-        self.name = name        # instance attribute
-        self.sex = sex          # instance attribute
-        self._salary = salary
+# class Employee:
+#     specie = "Human"        # class attribute
+#     def __init__(self, name, sex, salary):
+#         self.name = name        # instance attribute
+#         self.sex = sex          # instance attribute
+#         self._salary = salary
 
-    def get_salary(self):
-        return self._salary
+#     def get_salary(self):
+#         return self._salary
 
-    def set_salary(self, salary):
-        self._salary = salary
+#     def set_salary(self, salary):
+#         self._salary = salary
 
 
 
-    def taxation(self):
-        tax = self._salary * (14/100)
-        print(tax)
+#     def taxation(self):
+#         tax = self._salary * (14/100)
+#         print(tax)
 
-    def apply_bonus(self):
-        self._salary = ((25/100) * self._salary) + self._salary
-        self._salary
+#     def apply_bonus(self):
+#         self._salary = ((25/100) * self._salary) + self._salary
+#         self._salary
 
-staff = Employee("Azeez", "male", 200000)
+# staff = Employee("Azeez", "male", 200000)
 
-print(Employee.specie)
+# print(Employee.specie)
 
-staff.taxation()
-print(staff.get_salary())
-staff.set_salary(500000)
+# staff.taxation()
+# print(staff.get_salary())
+# staff.set_salary(500000)
 
-staff.taxation()
-print(staff.get_salary())
-# run this code by runinghtis in your terminal ==> python 22_oop.py
+# staff.taxation()
+# print(staff.get_salary())
+
+
+
+"""
+Docstring for 22_oop
+prcaticing class 
+inheritance
+polymorphism
+encapsulation
+"""
+# # run this code by runinghtis in your terminal ==> python 22_oop.py
 
