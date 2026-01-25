@@ -18,9 +18,9 @@
 # specificChild_obj = specificChild()
 # specificChild_obj.greet()
 
-# """Using the super() key word to acces instance attributes"""
+"""Using the super() key word to acces instance attributes
+Class Inheritance"""
 # # example
-
 class Animal:
     def __init__(self, name, color):
         self.name = name        #instance attribute
@@ -48,7 +48,7 @@ class Dog(Animal):
     
 class Cat(Animal):
     def __init__(self, name, color, breed):
-        super().__init__(name, color)   # accessing the parent class
+        super().__init__(name, color)   # accessing the instance attributes of parent class
         self.breed = breed
 #        self.color = "tiger patterns"
 

@@ -46,22 +46,31 @@
 #     print("You should be happy with yourself")
 
 # Match case 
-fav_color = input("what is your favourite color: ")
-match fav_color:
-    case "red":
-        print("You like a dangerous and active color")
-        pass
-    case "green":
-        print("You like a color that shows life and vitality")
-        pass
-    case "blue":
-        print("You like a bold calm and collected")
-        pass
-    case "yellow":
-        print("You like a coolor that says \"i'm here please look at me\"")
-        pass
+# fav_color = input("what is your favourite color: ")
+# match fav_color:
+#     case "red":
+#         print("You like a dangerous and active color")
+#         pass
+#     case "green":
+#         print("You like a color that shows life and vitality")
+#         pass
+#     case "blue":
+#         print("You like a bold calm and collected")
+#         pass
+#     case "yellow":
+#         print("You like a coolor that says \"i'm here please look at me\"")
+#         pass
 
+# Using ternary operator
+def check_number(x):
+    return "Positive" if x > 0 else "Negative or Zero"
 
+print(check_number(-5))   # Output: Positive
+
+# Another example
+age = 22
+status = "Adult" if age >= 18 else "Minor"
+print(status)
 
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code
