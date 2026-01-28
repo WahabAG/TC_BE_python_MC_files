@@ -102,6 +102,17 @@ my_dict = {"name" : "Black", "race" : "dog", "age" : 5}
 
 # print(my_dict)
 
+## coppying and changing dictonary values
+new_dict = my_dict.copy()
+print(new_dict)
+
+new_dict["age"]= 10
+
+new_dict["breed"] = "tebetan Mastif"
+
+print(new_dict)
+
+print(my_dict)
 
 # # Comprehension
 #  List c0mprehension -- a coinsice way to create List

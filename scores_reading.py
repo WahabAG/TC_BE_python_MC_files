@@ -69,3 +69,6 @@ def average_score(file_path):
 
 # call the function in a print
 print(average_score("scores.csv"))
+
+
+# # to run this cinde copy this into your terminal => python scores_reading.py
