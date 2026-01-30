@@ -103,16 +103,16 @@ my_dict = {"name" : "Black", "race" : "dog", "age" : 5}
 # print(my_dict)
 
 ## coppying and changing dictonary values
-new_dict = my_dict.copy()
-print(new_dict)
+# new_dict = my_dict.copy()
+# print(new_dict)
 
-new_dict["age"]= 10
+# new_dict["age"]= 10
 
-new_dict["breed"] = "tebetan Mastif"
+# new_dict["breed"] = "tebetan Mastif"
 
-print(new_dict)
+# print(new_dict)
 
-print(my_dict)
+# print(my_dict)
 
 # # Comprehension
 #  List c0mprehension -- a coinsice way to create List
@@ -131,15 +131,18 @@ print(even_square)
 #  Syntax {key : value for iten in itterable if conditions}
 # uses curly braces
 
-square_dict = {x: x**2 for x in range(10)}
+square_dict = {x: x**2 for x in range(10)}      # Creating a dict using comprehensions
 print(square_dict)
 
 # filtering
-evenSquare_dict = {x: x**2 for x in range(10) if x % 2 == 0}
+evenSquare_dict = {x: x**2 for x in range(10) if x % 2 == 0}        # using conditoins to control ouput in this case even numbers with modulus == 0
 print(evenSquare_dict)
 
-filter_dict = {key: value for key, value in square_dict.items() if key > 5}
-print(filter_dict)
+oddSquare_dict = {x: x**2 for x in range(10) if x % 2 >= 1}        # using conditoins to control ouput in this case odd numbers with modulus >= 1
+print(oddSquare_dict)
+
+filter_dict = {key: value for key, value in square_dict.items() if key >= 5}     # only outputs the objects with key >= 5 
+print(filter_dict)  # filters out the output of square_dict based on condition
 
 
 
