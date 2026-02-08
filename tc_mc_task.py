@@ -127,25 +127,46 @@
 # print(division)
 
 # task 
-import logging
+# import logging
 
-logging.basicConfig(
-    filename="app.log",              
-    level=logging.DEBUG,           
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+# logging.basicConfig(
+#     filename="app.log",              
+#     level=logging.DEBUG,           
+#     format="%(asctime)s - %(levelname)s - %(message)s"
+# )
 
-def greet(name, lang):
-    logging.info("The Programme Started")
-    print(f"Hello {name}, Welcome to {lang} Programming")
+# def greet(name, lang):
+#     logging.info("The Programme Started")
+#     print(f"Hello {name}, Welcome to {lang} Programming")
 
-greet("Azeez", "Python")
+# greet("Azeez", "Python")
+
+# # Task 4
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def introduction(self):
+        return f"My mame is {self.name}"
+
+class Worker(Person):
+    def __init__(self, name, job):
+        super().__init__(name)
+        self.job = job
+    
+
+class Manager(Worker):
+    def __init__(self, name, job):
+        super().__init__(name, job)
 
 
+man = Manager("Donald", "Real Estate manger")
+woman = Manager("Clearice", "Chief of Staff")
 
-
-
-
-
+print(man.introduction())
+print(man.job)
+print(woman.introduction())
+print (woman.job)
 
 # # to run this code copy and paste to your terminal =>> python tc_mc_task.py
