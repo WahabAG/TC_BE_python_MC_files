@@ -31,8 +31,8 @@
 
 # lambda function - arguments: expression
 # Example:
-add = lambda x, y: x + y
-print(add(3, 5))  # Output: 8
+# add = lambda x, y: x + y
+# print(add(3, 5))  # Output: 8
 
 
 
@@ -77,11 +77,60 @@ print(add(3, 5))  # Output: 8
 
 # # A higher-order function is a function that can take other functions as arguments or return a function as a result.
 # # Example:
-def apply_function(func, x, y):
-    return func(x, y)
+# def apply_function(func, x, y):
+#     return func(x, y)
 
-result = apply_function(add, 3, 5)  # Pass `add` function as argument
-print(result)  # Output: 8
+# result = apply_function(add, 3, 5)  # Pass `add` function as argument
+# print(result)  # Output: 8
+
+## another example of functions
+def add(a, b):
+    print("addition of two numbers")
+    return a + b
+def subtract(a, b):
+    print("subtraction of two numbers")
+    return a - b
+def multiply(a, b):
+    print("multiplication of two numbers")
+    return a * b 
+def divide(a, b):
+    print("division of two numbers")
+    return a / b
+
+def myMenu():
+    print("Welcome to my calculator Choose an operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    choice = int(input("Enter your choice (1-4): "))
+    return choice
+
+def operation():
+    choice = myMenu()
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    
+    if choice == 1:
+        result = add(a, b)
+    elif choice == 2:
+        result = subtract(a, b)
+    elif choice == 3:
+        result = multiply(a, b)
+    elif choice == 4:
+        result = divide(a, b)
+    else:
+        print("Invalid choice!")
+        return
+    
+    print(f"The result is: {result}")
+
+
+
+operation()
+
+
+
 
 
 # INSTRUCTIONS FOR TESTING
