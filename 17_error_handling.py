@@ -35,11 +35,11 @@ import logging
 #     print(f"Error: {e}")
 
 # loging while handling errors
-# logging.basicConfig(
-#     filename="app.log",              # Log file name
-#     level=logging.DEBUG,             # Log all levels DEBUG and above
-#     format="%(asctime)s - %(levelname)s - %(message)s" # Format for logging
-# )
+logging.basicConfig(
+    filename="app.log",              # Log file name
+    level=logging.DEBUG,             # Log all levels DEBUG and above
+    format="%(asctime)s - %(levelname)s - %(message)s" # Format for logging
+)
 
 
 # Handling Multiple Exceptions
@@ -80,18 +80,52 @@ import logging
 
 # Raising Custom Exceptions:
 # You can also define and raise your own custom exceptions by subclassing the built-in Exception class.
-class CustomError(Exception):
+# class CustomError(Exception):
+#     pass
+
+# def check_age(age):
+#     if age < 0:
+#         raise CustomError("Age cannot be negative.")
+#     print(f"Age: {age}")
+
+# try:
+#     check_age(-5)
+# except CustomError as e:
+#     print(f"Custom error occurred: {e}")
+
+
+class CantVote(Exception):
+    pass
+class TooOld(Exception):
     pass
 
-def check_age(age):
-    if age < 0:
-        raise CustomError("Age cannot be negative.")
-    print(f"Age: {age}")
+def check_voting_eligibility():
+    try:
+        age = int(input("Enter your age: "))
+        if age < 18:
+            logging.error(CantVote)
+            raise CantVote("You're a miinor yo cant vote")   
+        elif age > 60:
+            logging.error(TooOld)
+            raise TooOld(f"You Can Vote But Use the online system due to your elderly age of {age}")    
+        else:
+            print(f"Your age is {age} and you are eligible to vote. So knock yourself out")
+    
+    except ValueError:
+        logging.error(ValueError)
+        print("Invalid Data Type")
+    except CantVote as e:
+        print(f"Error: {e}")
+    except TooOld as e:
+        print(f"Error: {e}")
+    finally:
+        print("Thank you for using the voting eligibility checker.")
 
-try:
-    check_age(-5)
-except CustomError as e:
-    print(f"Custom error occurred: {e}")
+check_voting_eligibility()
+        
+    
+
+        
 
 
 # Common Python Exception Types
