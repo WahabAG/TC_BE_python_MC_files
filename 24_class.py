@@ -15,6 +15,7 @@ class Animal:
 
 
 class MyBird:
+    family = "Aves"
     def __init__(self):
         print("My Bird first appearace")
 
@@ -36,16 +37,25 @@ class Penguin(MyBird):
     def color(self):  # new class attribute
         print("i am black and white..")
 
+class Parrot(MyBird):
+    def __init__(self, name, color):
+        super().__init__()  #inheritace from parent class
+        self.name = name
+        self.color = color
+        print(f"Parrot first appearace, name: {self.name}, color: {self.color}")
+
 
 bird = MyBird()
 bird.whatType()
 bird.ability()
 print(f"{"_" * 5} \n" )
+
 pg1 = Penguin()
 pg1.color()
 pg1.ability()
 print(f"{"_" * 5} \n" )
 
+pr1 = Parrot("Polly", "green")
 
 
 
@@ -76,3 +86,9 @@ salmon.bones()
 salmon.feature()
 salmon.ability()
 salmon.scale()
+
+
+
+# INSTRUCTIONS FOR TESTING
+# 1. Launch your terminal and run the code
+# 2. Run the code -> python 24_class.py
